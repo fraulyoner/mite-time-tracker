@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Übersicht erfasste Zeiten</title>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/milligram.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+</head>
+
+<body>
+
+<main class="wrapper">
+
+    <div class="container">
+        <h1>Erfasste Zeiten</h1>
+        <p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kunde</th>
+                        <th>Datum</th>
+                        <th>Dauer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#entries}}
+                    <tr>
+                        <td>{{customer_name}}</td>
+                        <td>{{day}}</td>
+                        <td>{{duration}}</td>
+                    </tr>
+                    {{/entries}}
+                </tbody>
+            </table>
+        </p>
+        <a class="button" href="/">Zurück zur Startseite</a>
+    </div>
+
+</main>
+
+</body>
+
+</html>

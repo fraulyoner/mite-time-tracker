@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Meine Kunden</title>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/milligram.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+</head>
+
+<body>
+
+<main class="wrapper">
+
+    <div class="container">
+        <h1>Meine Kunden</h1>
+        <p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#customers}}
+                    <tr>
+                        <td>{{name}}</td>
+                    </tr>
+                    {{/customers}}
+                </tbody>
+            </table>
+        </p>
+        <a class="button" href="/">Zurück zur Startseite</a>
+    </div>
+
+</main>
+
+</body>
+
+</html>
